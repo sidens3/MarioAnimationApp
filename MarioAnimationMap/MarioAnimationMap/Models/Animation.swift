@@ -23,15 +23,15 @@ struct Animation {
         """
     }
     
-    private static let animationManager = AnimationDataManager.shared
+    private static let animationDataManager = AnimationDataManager.shared
 }
 
 extension Animation {
     static func getAnimation() -> Animation {
-        return Animation(animationType: "squeeze",
-                                  curve: "easeIn",
-                                  force: 5,
-                                  duration: 1,
-                                  delay: 1)
+        return Animation(animationType: animationDataManager.getRandomAnimationType(),
+                         curve: animationDataManager.getRandomCurve(),
+                         force: animationDataManager.getRandomForce(),
+                         duration: animationDataManager.getRandomDuration(),
+                         delay: animationDataManager.getRandomDelay())
     }
 }
