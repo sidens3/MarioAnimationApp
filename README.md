@@ -1,1 +1,1 @@
-# MarioAnimationMap
+# MarioAnimationApp
