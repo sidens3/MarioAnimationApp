@@ -13,9 +13,11 @@
 		4A02B6BF274E842E00DABDF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A02B6BD274E842E00DABDF8 /* Main.storyboard */; };
 		4A02B6C1274E842F00DABDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A02B6C0274E842F00DABDF8 /* Assets.xcassets */; };
 		4A02B6C4274E842F00DABDF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A02B6C2274E842F00DABDF8 /* LaunchScreen.storyboard */; };
+		52DD55053F44F8A5B0A58880 /* Pods_MarioAnimationMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE0975FF940CAEF285498CC /* Pods_MarioAnimationMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CE0975FF940CAEF285498CC /* Pods_MarioAnimationMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarioAnimationMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A02B6B4274E842E00DABDF8 /* MarioAnimationMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarioAnimationMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A02B6B7274E842E00DABDF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A02B6B9274E842E00DABDF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4A02B6C0274E842F00DABDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A02B6C3274E842F00DABDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A02B6C5274E842F00DABDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62AE335DD2A7D446F849386C /* Pods-MarioAnimationMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarioAnimationMap.release.xcconfig"; path = "Target Support Files/Pods-MarioAnimationMap/Pods-MarioAnimationMap.release.xcconfig"; sourceTree = "<group>"; };
+		8FF369B3072908381F433DBA /* Pods-MarioAnimationMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarioAnimationMap.debug.xcconfig"; path = "Target Support Files/Pods-MarioAnimationMap/Pods-MarioAnimationMap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DD55053F44F8A5B0A58880 /* Pods_MarioAnimationMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				4A02B6B6274E842E00DABDF8 /* MarioAnimationMap */,
 				4A02B6B5274E842E00DABDF8 /* Products */,
+				844F79A7DC9355FCFD89F163 /* Pods */,
+				D1AF270606623074A8470E31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = MarioAnimationMap;
 			sourceTree = "<group>";
 		};
+		844F79A7DC9355FCFD89F163 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FF369B3072908381F433DBA /* Pods-MarioAnimationMap.debug.xcconfig */,
+				62AE335DD2A7D446F849386C /* Pods-MarioAnimationMap.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1AF270606623074A8470E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CE0975FF940CAEF285498CC /* Pods_MarioAnimationMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A02B6C8274E842F00DABDF8 /* Build configuration list for PBXNativeTarget "MarioAnimationMap" */;
 			buildPhases = (
+				058981E6F608F34C5C08AFED /* [CP] Check Pods Manifest.lock */,
 				4A02B6B0274E842E00DABDF8 /* Sources */,
 				4A02B6B1274E842E00DABDF8 /* Frameworks */,
 				4A02B6B2274E842E00DABDF8 /* Resources */,
+				E4851AA408A784419E26048F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		058981E6F608F34C5C08AFED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarioAnimationMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4851AA408A784419E26048F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarioAnimationMap/Pods-MarioAnimationMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarioAnimationMap/Pods-MarioAnimationMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarioAnimationMap/Pods-MarioAnimationMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A02B6B0274E842E00DABDF8 /* Sources */ = {
@@ -283,12 +352,14 @@
 		};
 		4A02B6C9274E842F00DABDF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF369B3072908381F433DBA /* Pods-MarioAnimationMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7K76ZRYMQ;
 				INFOPLIST_FILE = MarioAnimationMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +367,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mikhailzinovev.MarioAnimationMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4A02B6CA274E842F00DABDF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AE335DD2A7D446F849386C /* Pods-MarioAnimationMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7K76ZRYMQ;
 				INFOPLIST_FILE = MarioAnimationMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mikhailzinovev.MarioAnimationMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
