@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marioImage" translatesAutoresizingMaskIntoConstraints="NO" id="9Wc-KM-5RG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marioImage" translatesAutoresizingMaskIntoConstraints="NO" id="9Wc-KM-5RG" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="124" y="386" width="166" height="134"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCc-01-HAP">
@@ -51,8 +51,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="AnimationInfoLabel" destination="SPO-dU-9QK" id="AKa-k3-GIc"/>
                         <outlet property="animationButton" destination="VCc-01-HAP" id="kBc-Uw-0FU"/>
+                        <outlet property="animationInfoLabel" destination="SPO-dU-9QK" id="AKa-k3-GIc"/>
                         <outlet property="marioImage" destination="9Wc-KM-5RG" id="IEZ-Bu-JMl"/>
                     </connections>
                 </viewController>

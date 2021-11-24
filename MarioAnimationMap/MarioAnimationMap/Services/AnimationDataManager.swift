@@ -7,10 +7,11 @@
 
 import Foundation
 
-class AnimationManager {
-    static let shared = AnimationManager()
+class AnimationDataManager {
+    
+    static let shared = AnimationDataManager()
     
     private init() {
-        
     }
+    
 }
