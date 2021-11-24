@@ -21,7 +21,10 @@
                                 <rect key="frame" x="124" y="386" width="166" height="134"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCc-01-HAP">
-                                <rect key="frame" x="173.5" y="771" width="67" height="31"/>
+                                <rect key="frame" x="132" y="771" width="150" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Age-Bh-P4b"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -29,7 +32,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPO-dU-9QK">
-                                <rect key="frame" x="100" y="86" width="214" height="20.5"/>
+                                <rect key="frame" x="152.5" y="84" width="109" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109" id="ha5-Fu-zCR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,15 +45,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VCc-01-HAP" secondAttribute="bottom" constant="60" id="1Xn-S1-9OV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SPO-dU-9QK" secondAttribute="trailing" constant="100" id="9kZ-2b-Ggq"/>
                             <constraint firstItem="SPO-dU-9QK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F6v-s7-bdx"/>
                             <constraint firstItem="9Wc-KM-5RG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Zlo-PS-1HX"/>
                             <constraint firstItem="VCc-01-HAP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aUf-gz-NfN"/>
                             <constraint firstItem="9Wc-KM-5RG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="fJu-dX-q7k"/>
-                            <constraint firstItem="SPO-dU-9QK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="gjv-71-cp7"/>
-                            <constraint firstItem="SPO-dU-9QK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="nTZ-wD-YuP"/>
                             <constraint firstItem="9Wc-KM-5RG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oFG-OI-n7Q"/>
                             <constraint firstItem="9Wc-KM-5RG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="sr3-lu-xql"/>
+                            <constraint firstItem="SPO-dU-9QK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="zmI-g9-0tt"/>
                         </constraints>
                     </view>
                     <connections>

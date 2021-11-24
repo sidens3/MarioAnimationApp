@@ -13,7 +13,6 @@ class MarioViewController: UIViewController {
     @IBOutlet weak var marioImage: SpringImageView!
     @IBOutlet weak var animationButton: UIButton!
     
-    private let animationManager = AnimationDataManager.shared
     private var currentAnimation: Animation?
     
     override func viewDidLoad() {
@@ -23,13 +22,15 @@ class MarioViewController: UIViewController {
     }
 
     @IBAction func animationButtonPressed() {
-        print("Animation button pressed")
         animateMarioImage()
         
         configureNextAnimation()
         updateUI()
     }
-    
+}
+
+//MARK: - Private Methods
+extension MarioViewController {
     private func animateMarioImage() {
         guard let animation = currentAnimation else { return }
         marioImage.animation = animation.animationType
@@ -47,7 +48,7 @@ class MarioViewController: UIViewController {
     
     private func updateUI() {
         DispatchQueue.main.async { [weak self] in
-            self?.animationButton.titleLabel?.text = self?.currentAnimation?.animationType
+            self?.animationButton.setTitle(self?.currentAnimation?.animationType, for: .normal)
             self?.animationInfoLabel.text = self?.currentAnimation?.info
         }
     }

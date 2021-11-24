@@ -11,7 +11,7 @@ class AnimationDataManager {
     
     static let shared = AnimationDataManager()
     
-    let range = 1..<3
+    private let range = 1..<3
     
     private init() {
     }
